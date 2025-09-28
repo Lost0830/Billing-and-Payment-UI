@@ -362,13 +362,13 @@ app.post('/api/auth/login', async (req, res) => {
       });
     }
 
-    if (!user.passwordHash.startsWith('$2b$')) {
-      console.log('   ❌ ERROR: Password hash is not a valid bcrypt hash!');
-      return res.status(401).json({ 
-        success: false,
-        message: 'User account configuration error - invalid password format' 
-      });
-    }
+    // if (!user.passwordHash.startsWith('$2b$')) {
+    //   console.log('   ❌ ERROR: Password hash is not a valid bcrypt hash!');
+    //   return res.status(401).json({ 
+    //     success: false,
+    //     message: 'User account configuration error - invalid password format' 
+    //   });
+    // }
 
     // Compare passwords
     console.log('11. 🔄 Comparing passwords...');
