@@ -636,3 +636,5 @@ export function PaymentProcessing({ onNavigateToView }: PaymentProcessingProps) 
           </TabsContent>
           </Tabs>
      </div>
+  )
+};
